@@ -1,5 +1,7 @@
 package com.company;
 
+import java.util.Arrays;
+
 import static com.company.MergeSort.printArray;
 
 public class Main {
@@ -46,11 +48,23 @@ public class Main {
 
 
         HeapSort ob5 = new HeapSort();
-        ob5.sort(arr);
+        ob5.sort(arrayH);
 
         System.out.println("Sorted array is");
         printArray(arrayH);
 
+        int arrayS[] = {12, 34, 54, 2, 3};
+        System.out.println("Array before sorting");
+        printArray(arrayS);
+
+        ShellSort ob6 = new ShellSort();
+        ob6.sort(arrayS);
+
+        System.out.println("Array after sorting");
+        printArray(arrayS);
+
+
+//        Arrays.sort(arrayH); for java own implementation which use both quick and merge sort
     }
 
 
